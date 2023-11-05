@@ -1,0 +1,108 @@
+{
+    "id":1,
+    "Title":"Transformando el Futuro con Tecnología",
+    "description":"Soluciones tecnológicas innovadoras para ti y para tu negocio.",
+    
+    "header": {
+      "logo": "https://images.vexels.com/media/users/3/142890/isolated/preview/4ea2d7c4bf3cad23a4f18ee58752deb8-high-tech-rings-logo.png",
+      "companyName":"KNYD"
+    },
+    
+    "services":[
+      {
+        "id":"1",
+        "type":"Asesoramiento Tecnológico",
+        "ico":"https://cdn3.iconfinder.com/data/icons/customer-support-24/64/consult-advice-system-service-mobile-128.png",
+        "description":"Nuestro servicio de asesoría tecnológica está diseñado para ayudarte a aprovechar al máximo las últimas tendencias y avances tecnológicos. Nuestros expertos en tecnología estarán a tu disposición para brindarte orientación personalizada en la toma de decisiones estratégicas relacionadas con la tecnología. Ya sea que necesites asistencia en la selección de nuevas soluciones tecnológicas, la optimización de tus sistemas existentes o la planificación de proyectos de transformación digital, estamos aquí para ofrecerte el conocimiento y la experiencia necesarios. Confía en nosotros para mantener tu empresa a la vanguardia en un mundo tecnológico en constante evolución"
+      },
+      {
+        "id": "2",
+        "type":"Reparación de Dispositivos",
+        "ico":"https://cdn3.iconfinder.com/data/icons/electronic-repair-service/100/electronic_repair_service-03-512.png",
+        "description": "Nuestro servicio de reparación de dispositivos está diseñado para solucionar cualquier problema que puedas tener con tus equipos electrónicos. Ya sea una pantalla rota, problemas de software o hardware, nuestros técnicos altamente capacitados están listos para ayudarte a recuperar la funcionalidad de tus dispositivos en el menor tiempo posible. Confía en nosotros para devolver la vida a tus dispositivos de manera rápida y eficiente."
+      },
+      {
+        "id": "3",
+        "type":"Instalación a Domicilio",
+        "ico":"https://cdn1.iconfinder.com/data/icons/ecommerce-v1-0-outline-1/96/Shipping_Delivery_Truck_Fast-512.png",
+        "description": "Simplifica tu vida con nuestro servicio de instalación a domicilio. Nos encargamos de la instalación de productos electrónicos y tecnológicos en la comodidad de tu hogar u oficina. Desde configurar sistemas de entretenimiento en casa hasta instalar redes informáticas empresariales, nuestro equipo de expertos se asegurará de que todo funcione sin problemas, sin que tengas que preocuparte por nada. Te brindamos comodidad y tranquilidad en cada instalación."
+      },
+      {
+        "id": "4",
+        "type":"Seguridad Cibernética",
+        "ico":"https://cdn0.iconfinder.com/data/icons/cyber-security-solid-threat-protection/512/Cyber_security-512.png",
+        "description": "Proteger tus datos y sistemas es esencial en el mundo digital actual. Nuestro servicio de seguridad cibernética se dedica a salvaguardar tu información valiosa y mantener tus sistemas a salvo de amenazas en línea. Realizamos evaluaciones exhaustivas de seguridad, implementamos medidas de protección avanzadas y proporcionamos capacitación para que estés preparado ante cualquier ciberataque. Tu seguridad en línea es nuestra prioridad"
+      }
+    ] ,
+    "gallery": [
+      {
+        "id": 1,
+        "name": "Proyecto 1",
+        "image": "https://i.pinimg.com/564x/eb/de/db/ebdedb2bd0955b5ea8c2dc4422c0bd50.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Proyecto 2",
+        "image": "https://i.pinimg.com/564x/51/f3/d8/51f3d8fadbf9f4fdb5e1f555b7602793.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Proyecto 3",
+        "image": "https://i.pinimg.com/564x/aa/6d/ee/aa6dee6d769a1b83f0baf80ae15c7267.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Proyecto 4",
+        "image": "https://i.pinimg.com/564x/3c/cf/c5/3ccfc53a77a35db65db20234b1200215.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Proyecto 5",
+        "image": "https://i.pinimg.com/564x/b4/6c/82/b46c82ef88cb5a40c5f5a4f83e18fa05.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Proyecto 6",
+        "image": "https://i.pinimg.com/564x/d5/05/a7/d505a716c00c828111b2101d673f457e.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Proyecto 7",
+        "image": "https://i.pinimg.com/564x/76/e9/d6/76e9d66f07ead2feb4b7e7b7a64edfc7.jpg" 
+      },
+      {
+        "id": 8,
+        "name": "Proyecto 8",
+        "image": "https://i.pinimg.com/564x/c5/60/2b/c5602b92a4ee7c8a15351520de5ff51f.jpg"
+      }
+    ],
+
+    "faq": [
+      {
+        "id": 1,
+        "question": "1. ¿Cómo puedo solicitar asesoramiento tecnológico?",
+        "answer": "Puede ponerse en contacto con nuestro equipo de asesoramiento a través del formulario de contacto en línea o llamando a nuestro número de atención al cliente."
+      },
+      {
+        "id": 2,
+        "question": "2. ¿Qué tipos de problemas de ciberseguridad pueden resolver?",
+        "answer": "Nuestros expertos en ciberseguridad pueden ayudar a proteger sus sistemas contra virus, malware, ataques de phishing, intrusiones no autorizadas y otros riesgos cibernéticos."
+      },
+      {
+        "id": 3,
+        "question": "¿Cuál es el costo de la instalación a domicilio?",
+        "answer": "El costo de la instalación a domicilio varía según la ubicación y la naturaleza del trabajo. Póngase en contacto con nosotros para obtener una cotización personalizada."
+      },
+      {
+        "id": 4,
+        "question": "4. ¿Cómo funciona la asesoría profesional?",
+        "answer": "Implica la evaluación de sus necesidades tecnológicas, recomendaciones de soluciones, implementación y soporte para optimizar su infraestructura tecnológica."
+      }
+    ],
+   
+    "footer": {
+      "copyrightText": "&copy; 2023 KNYD. Todos los derechos reservados.",
+      "teamMembers": "Norman, Yeilin, Dixon y Karla"
+    }
+  }
+  

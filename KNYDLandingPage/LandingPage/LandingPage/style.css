@@ -1,0 +1,356 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f02d;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fijar el header en la parte superior */
+    top: 0; /* Colocar el header en la parte superior */
+    width: 100%; /* Ancho completo */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Transición suave */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Centra verticalmente la lista */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Estilo para los botones de navegación */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Cambiar el estilo del header cuando se desplaza hacia abajo */
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 10px 0; 
+}
+
+
+/* Estilos para la sección de banner */
+.banner {
+    background-image: url('https://t3.ftcdn.net/jpg/02/96/61/94/360_F_296619471_iEGweTy9VsokHtbCJsVmyez0d2rocmmA.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    color: #fff;
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.005); /* Ajusta la opacidad del overlay aquí */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el color de fondo del texto */
+    padding: 10px; /* Añade un poco de espaciado alrededor del texto */
+}
+
+.banner p {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el color de fondo del texto */
+    padding: 10px; /* Añade un poco de espaciado alrededor del texto */
+}
+
+/* Estilos para la sección de servicios */
+.servicios {
+   background-color: #f0f0f02d;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 36px;
+    margin-bottom: 40px; /* Mayor espacio entre el título y los servicios */
+}
+
+/* Usamos Grid para una disposición elegante de los servicios */
+.servicios .servicio {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para dispositivos móviles */
+    gap: 20px;
+    text-align: left; /* Texto alineado a la izquierda */
+    background-color: #fff;
+    border: 1px solid #e5e5e5; /* Borde ligero alrededor de cada servicio */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* Estilo para la imagen en cada servicio */
+.servicios .servicio img {
+    width: 128px;
+    height: 128px;
+    border-radius: 5px; /* Borde redondeado para las imágenes */
+    margin-left: 300px;
+}
+
+/* Estilo para el título de cada servicio */
+.servicios .servicio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto (p) de cada servicio */
+.servicios .servicio p {
+    font-size: 16px;
+    color: #666; /* Texto de color gris */
+}
+
+/* Estilos para alternar la posición de las imágenes */
+.servicios .servicio:nth-child(even) {
+    grid-template-columns: 1fr 1fr; /* Cambiar la posición de la imagen y el contenido */
+}
+
+/* Estilos para cuando el mouse está sobre los servicios */
+.servicios .servicio:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sutil sombra al hacer hover */
+    transition: box-shadow 0.3s ease;
+}
+
+.galeria h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+  
+.galerias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 13px;
+  }
+
+  .galeria{
+    padding: 25px;
+    background-color:#e9e7e7;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    border-radius: 1%;
+    margin: 0.5%;
+  }
+
+  .imagen1 {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .imagen2 {
+    grid-column: 2/4;
+    grid-row: 1;
+  }
+  
+  .imagen3 {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  
+  .imagen4 {
+    grid-column: 4;
+    grid-row: 1/3;
+  }
+  
+  .imagen5 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .imagen6 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .imagen7 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  .imagen8 {
+    grid-column: 3/5;
+    grid-row: 3;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 2%;
+    
+  }
+  
+/* Estilos para la sección de Preguntas Frecuentes */
+.Preguntas {
+    background-color: #94949413;
+    padding: 40px;
+    text-align: left;
+}
+
+.faq h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    color: #251461;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* Estilos para la sección de contacto */
+.contacto {
+    background-color: #333;
+    padding: 28px 0;
+    color: #fff;
+}
+
+.contacto h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px;
+}
+
+.contacto label {
+    font-size: 18px;
+    color: #fff;
+    width: 80%; /* ancho labels para mover a la izquierda */
+    margin-left: 2%; /* Pequeño margen izquierdo para separarlos de los campos de entrada */
+    
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #c0c0c0;
+}
+
+.contacto textarea {
+    resize: none;
+}
+
+.contacto button {
+    background-color: #0074e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 80%;
+}
+
+.contacto button:hover {
+    background-color: #005cbf;
+}
+
+.titulo-form-contacto{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contacto-dos-columnas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-columna{
+    padding: 1rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-radius: 2%;
+}
+
+.texto-columna{
+    padding: 1rem 0; 
+}
+
+.img-columna img {
+    width: 380px; 
+    height: 480px; 
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
