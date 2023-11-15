@@ -3,11 +3,14 @@
     "Title":"Transformando el Futuro con Tecnología",
     "description":"Soluciones tecnológicas innovadoras para ti y para tu negocio.",
     
-    "header": {
-      "logo": "https://images.vexels.com/media/users/3/142890/isolated/preview/4ea2d7c4bf3cad23a4f18ee58752deb8-high-tech-rings-logo.png",
-      "companyName":"KNYD"
-    },
-    
+      "FootercopyrightText": " 2023 KNYD. Todos los derechos reservados.",
+      "footerteamMembers": "Norman, Yeilin, Dixon y Karla",
+
+      "Headerlogo": "https://images.vexels.com/media/users/3/142890/isolated/preview/4ea2d7c4bf3cad23a4f18ee58752deb8-high-tech-rings-logo.png",
+      "HeadercompanyName":"KNYD",
+
+  
+            
     "services":[
       {
         "id":"1",
@@ -98,11 +101,6 @@
         "question": "4. ¿Cómo funciona la asesoría profesional?",
         "answer": "Implica la evaluación de sus necesidades tecnológicas, recomendaciones de soluciones, implementación y soporte para optimizar su infraestructura tecnológica."
       }
-    ],
-   
-    "footer": {
-      "copyrightText": " 2023 KNYD. Todos los derechos reservados.",
-      "teamMembers": "Norman, Yeilin, Dixon y Karla"
-    }
+    ]
   }
   
