@@ -112,14 +112,16 @@ header.scrolled {
 
 /* Usamos Grid para una disposición elegante de los servicios */
 .servicios .servicio {
-    display: grid;
+    display: flex;
+    margin: 60px;
     grid-template-columns: 1fr; /* Una columna para dispositivos móviles */
-    gap: 20px;
+    gap: 120px;
     text-align: left; /* Texto alineado a la izquierda */
     background-color: #fff;
     border: 1px solid #e5e5e5; /* Borde ligero alrededor de cada servicio */
     border-radius: 10px;
     padding: 20px;
+    
 }
 
 
@@ -128,7 +130,7 @@ header.scrolled {
     width: 128px;
     height: 128px;
     border-radius: 5px; /* Borde redondeado para las imágenes */
-    margin-left: 300px;
+    margin-left: 150px;
 }
 
 /* Estilo para el título de cada servicio */
