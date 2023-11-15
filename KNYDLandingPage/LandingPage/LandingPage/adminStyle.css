@@ -1,37 +1,94 @@
-/* Estilos generales */
+/* Estilos generales para la página */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f02d;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
+/* Estilos para el header */
+header {
+    background-image: url('https://t3.ftcdn.net/jpg/02/96/61/94/360_F_296619471_iEGweTy9VsokHtbCJsVmyez0d2rocmmA.jpg');
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-#mainMenu {
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #333;
+    align-items: center;
 }
 
-#mainMenu li {
-    margin-right: 10px;
+nav ul li {
+    margin-right: 20px;
 }
 
-#mainMenu a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 500;
 }
 
-#editContainer {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #333;
-    background-color: #f0f0f0;
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0074e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005cbf;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
 }

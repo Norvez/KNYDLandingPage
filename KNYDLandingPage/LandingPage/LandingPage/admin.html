@@ -1,27 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <title>Editor de Página Principal</title>
+    <title>Administración - KNYD</title>
     <link rel="stylesheet" type="text/css" href="adminStyle.css">
 </head>
+
 <body>
-    <h1>Editor de Página Principal</h1>
+    <header>
+        <h1>Panel de Administración - KNYD</h1>
+    </header>
 
-    <ul id="mainMenu">
-        <li><a href="#" data-section="header">Editar Header</a></li>
+    <section class="company-info">
+        <h2>Información Principal de la Empresa</h2>
+        <form id="update-company-form">
+            <label for="company-title">Título de la Empresa:</label>
+            <input type="text" id="company-title" name="company-title">
+
+            <label for="company-description">Descripción Breve:</label>
+            <textarea id="company-description" name="company-description"></textarea>
+
+            <label for="company-image">URL de la Nueva Imagen:</label>
+            <input type="text" id="company-image" name="company-image">
+
+            <button type="button" onclick="updateCompanyInfo()">Actualizar</button>
+            <button type="button" onclick="deleteCompanyInfo()">Eliminar</button>
+        </form>
+    </section>
+
+    <section class="services">
+        <h2>Servicios</h2>
+        <form id="update-services-form">
         
-        <li><a href="#" data-section="banner">Editar Banner</a></li>
-        <li><a href="#" data-section="servicios">Editar Servicios</a></li>
-        <li><a href="#" data-section="galeria">Editar Galería</a></li>
-        <li><a href="#" data-section="Preguntas">Editar Preguntas Frecuentes</a></li>
-        <li><a href="#" data-section="contacto">Editar Contacto</a></li>
-        <li><a href="#" data-section="footer">Editar Footer</a></li>
-    </ul>
+            <div class="service-item">
+                <label for="service1-name">Nombre del Servicio 1:</label>
+                <input type="text" id="service1-name" name="service1-name">
 
-    <div id="editContainer">
-        <!-- El contenido del submenú y el formulario se generará dinámicamente aquí -->
-    </div>
+                <label for="service1-description">Descripción del Servicio 1:</label>
+                <textarea id="service1-description" name="service1-description"></textarea>
 
-    <script src="adminScript.js"></script>
+                <button type="button" onclick="updateService('service1')">Actualizar</button>
+                <button type="button" onclick="deleteService('service1')">Eliminar</button>
+            </div>
+
+            <div class="service-item">
+                <label for="service1-name">Nombre del Servicio 2:</label>
+                <input type="text" id="service1-name" name="service1-name">
+
+                <label for="service1-description">Descripción del Servicio 2:</label>
+                <textarea id="service1-description" name="service1-description"></textarea>
+
+                <button type="button" onclick="updateService('service1')">Actualizar</button>
+                <button type="button" onclick="deleteService('service1')">Eliminar</button>
+            </div>
+
+            <div class="service-item">
+                <label for="service1-name">Nombre del Servicio 3:</label>
+                <input type="text" id="service1-name" name="service1-name">
+
+                <label for="service1-description">Descripción del Servicio 3:</label>
+                <textarea id="service1-description" name="service1-description"></textarea>
+
+                <button type="button" onclick="updateService('service1')">Actualizar</button>
+                <button type="button" onclick="deleteService('service1')">Eliminar</button>
+            </div>
+
+            <div class="service-item">
+                <label for="service1-name">Nombre del Servicio 4:</label>
+                <input type="text" id="service1-name" name="service1-name">
+
+                <label for="service1-description">Descripción del Servicio 4:</label>
+                <textarea id="service1-description" name="service1-description"></textarea>
+
+                <button type="button" onclick="updateService('service1')">Actualizar</button>
+                <button type="button" onclick="deleteService('service1')">Eliminar</button>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="image-gallery">
+        <h2>Galería</h2>
+        <form id="delete-images-form">
+            <!-- Puedes tener una lista de imágenes con checkboxes -->
+            <div class="image-item">
+                <input type="checkbox" id="img1-delete" name="img1-delete">
+                <label for="img1-delete">Eliminar Imagen 1</label>
+            </div>
+            <div class="image-item">
+                <input type="checkbox" id="img1-delete" name="img1-delete">
+                <label for="img1-delete">Eliminar Imagen 2</label>
+            </div>
+            <div class="image-item">
+                <input type="checkbox" id="img1-delete" name="img1-delete">
+                <label for="img1-delete">Eliminar Imagen 3</label>
+            </div>
+            <div class="image-item">
+                <input type="checkbox" id="img1-delete" name="img1-delete">
+                <label for="img1-delete">Eliminar Imagen 4</label>
+            </div>
+            <div class="image-item">
+                <input type="checkbox" id="img1-delete" name="img1-delete">
+                <label for="img1-delete">Eliminar Imagen 5</label>
+            </div>
+            <div class="image-item">
+                <input type="checkbox" id="img1-delete" name="img1-delete">
+                <label for="img1-delete">Eliminar Imagen 6</label>
+            </div>
+            <div class="image-item">
+                <input type="checkbox" id="img1-delete" name="img1-delete">
+                <label for="img1-delete">Eliminar Imagen 7</label>
+            </div>
+            <div class="image-item">
+                <input type="checkbox" id="img1-delete" name="img1-delete">
+                <label for="img1-delete">Eliminar Imagen 8</label>
+            </div>
+
+            <button type="button" onclick="deleteImages()">Eliminar Imágenes</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; KNYD Admin</p>
+    </footer>
+
+    <!-- Incluir scripts relevantes para la lógica de actualización y eliminación -->
+    <script src="admin-scripts.js"></script>
 </body>
+
 </html>
