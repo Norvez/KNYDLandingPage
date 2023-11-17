@@ -27,23 +27,18 @@ window.addEventListener("load", (event) => {
       footerCopy.textContent = company.FooterCopyRightTex;
       footerInteg.textContent = company.FooterteamMenbers;
 
-      console.log(company, company.servicios);
+      console.log(company, company.servicio);
 
-      company.servicios.forEach(service => {
+      company.servicio.forEach(service => {
         document.getElementById(`desc_${service.id}`).innerText = service.Descripcion; 
         document.getElementById(`img_${service.id}`).src = service.IcoUrl; 
         document.getElementById(`servicio_${service.id}`).innerText = service.Type; 
         
       });
 
-      company.galerias.forEach(gallery => {
+      company.galeria.forEach(gallery => {
           document.getElementById(`imgG_${gallery.id}`).src = gallery.imageUrl; 
       });
-
-    company.faq.forEach(faq => {
-      document.getElementById(`pregunta_${faq.id}`).innerText = faq.question;
-      document.getElementById(`res_${faq.id}`).innerText = faq.answer;
-    });
 
   })
 
