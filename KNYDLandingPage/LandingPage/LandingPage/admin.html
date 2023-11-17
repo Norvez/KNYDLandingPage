@@ -33,47 +33,17 @@
         <form id="update-services-form">
         
             <div class="service-item">
-                <label for="service1-name">Nombre del Servicio 1:</label>
-                <input type="text" id="service1-name" name="service1-name">
-
-                <label for="service1-description">Descripción del Servicio 1:</label>
-                <textarea id="service1-description" name="service1-description"></textarea>
-
-                <button type="button" onclick="updateService('service1')">Actualizar</button>
-                <button type="button" onclick="deleteService('service1')">Eliminar</button>
-            </div>
-
-            <div class="service-item">
-                <label for="service2-name">Nombre del Servicio 2:</label>
-                <input type="text" id="service2-name" name="service2-name">
-
-                <label for="service2-description">Descripción del Servicio 2:</label>
-                <textarea id="service2-description" name="service2-description"></textarea>
-
-                <button type="button" onclick="updateService('service2')">Actualizar</button>
-                <button type="button" onclick="deleteService('service2')">Eliminar</button>
-            </div>
-
-            <div class="service-item">
-                <label for="service3-name">Nombre del Servicio 3:</label>
-                <input type="text" id="service3-name" name="service3-name">
-
-                <label for="service3-description">Descripción del Servicio 3:</label>
-                <textarea id="service3-description" name="service3-description"></textarea>
-
-                <button type="button" onclick="updateService('service3')">Actualizar</button>
-                <button type="button" onclick="deleteService('service3')">Eliminar</button>
-            </div>
-
-            <div class="service-item">
-                <label for="service4-name">Nombre del Servicio 4:</label>
-                <input type="text" id="service4-name" name="service4-name">
-
-                <label for="service4-description">Descripción del Servicio 4:</label>
-                <textarea id="service4-description" name="service4-description"></textarea>
-
-                <button type="button" onclick="updateService('service4')">Actualizar</button>
-                <button type="button" onclick="deleteService('service4')">Eliminar</button>
+                <label for="service-name">Nombre del Servicio:</label>
+                <input type="text" id="service-name" name="service-name">
+            
+                <label for="service-description">Descripción del Servicio:</label>
+                <textarea id="service-description" name="service-description"></textarea>
+            
+                <label for="service-id">ID del Servicio:</label>
+                <input type="text" id="service-id" name="service-id">
+            
+                <button type="button" onclick="updateService()">Actualizar</button>
+                <button type="button" onclick="deleteService()">Eliminar</button>
             </div>
 
         </form>
@@ -132,3 +102,4 @@
 </body>
 
 </html>
+
